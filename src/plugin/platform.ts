@@ -599,6 +599,7 @@ export class EufySecurityPlatform implements DynamicPlatformPlugin {
       case DeviceType.LOCK_WIFI:
       case DeviceType.LOCK_BLE_NO_FINGER:
       case DeviceType.LOCK_WIFI_NO_FINGER:
+      case DeviceType.LOCK_8503:
         new LockAccessory(this, accessory, device as Lock);
         break;
       default:

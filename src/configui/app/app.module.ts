@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -78,6 +78,7 @@ import { DownloadLogsComponent } from './config-options/download-logs/download-l
     TalkbackComponent,
     DownloadLogsComponent,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [BrowserModule, FormsModule, NgbModule, AppRoutingModule, FontAwesomeModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],

@@ -129,4 +129,7 @@ dist
 
 homebridge-ui/
 
+# Mac system files
+.DS_Store
+
 TODO
